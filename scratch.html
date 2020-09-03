@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTMLtest</title>
+    <meta charset="UTF-8"/>
+    <meta author="Maxim">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script>
+    function rotateUSF() {
+    var img = document.getElementById("usfImg");
+    img.setAttribute("class", "whenClicked");}
+
+    function rotateSOV() {
+    var img = document.getElementById("sovietImg");
+    img.setAttribute("class", "whenClicked");}
+    </script>
+</head>
+<body id="img">
+<div class="container-fluid">
+    <div class="row">
+        <header id="Banner">
+            <h1>
+                <words>Company of heroes</words>
+                <number>2</number>
+            </h1>
+            <nav>
+                <a href="#USF" onclick="document.getElementById('audio').play();">
+                    <img src="Logo_Usf.png" id="usfImg" onclick="rotateUSF();">
+                </a>
+                <a href="#Russia" onclick="document.getElementById('audio').play();">
+                    <img src="Logo_soviet.png" id="sovietImg" onclick="rotateSOV();">
+                </a>
+            </nav>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-3" id="aside">
+            <p>Useful websites:</p>
+            <ul type="square" style="color:white;">
+                <li><a href="https://companyofheroes.fandom.com/wiki/Company_of_Heroes_2">Wiki-link</a></li>
+                <li><a href="https://www.youtube.com/watch?v=hgjSPNWy0ic">Visual Tutorial Soviets</a></li>
+                <li><a href="https://www.youtube.com/watch?v=VZXSSGh7oEc">Visual Tutorial USF</a></li>
+            </ul>
+        </div>
+        <div class="col-9" id="tutorial">
+            <div class="row">
+                <div id="USF">
+                    <h2>
+                        How to USF
+                    </h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="Russia">
+                    <h2>
+                        How to Soviets
+                    </h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audio">
+        <source src="Mortar.wav" type="audio/wav">
+        <source src="Mortar.mp3" type="audio/mp3">
+        <source src="Mortar.ogg" type="audio/ogg">
+    </audio>
+</div>
+
+</body>
+</html>

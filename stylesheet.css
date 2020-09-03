@@ -1,0 +1,98 @@
+/*--De hoofding--*/
+#Banner
+{
+padding:5px;
+background-image:url(BannerGuns.jpg);
+background-repeat:no-repeat;
+background-size:contain;
+height:95px;
+
+font: small-caps bold 90% Palatino Linotype, Book Antiqua, Palatino, serif;
+text-align:center;
+text-transform:uppercase;
+}
+
+h1 words
+{
+text-decoration:underline overline;
+letter-spacing: 2px;
+}
+
+h1 number
+{
+text-decoration:none;
+font-size:200%;
+}
+
+
+/*--De body--*/
+#img
+{background-image: url("Cover.png");
+background-repeat:no-repeat;
+width: auto;
+height: auto;
+background-size:cover; }
+
+/*--Nav img--*/
+#usfImg
+{position:absolute;
+top:25px;
+left:400px;
+float:left;
+}
+
+#sovietImg
+{position:absolute;
+top:25px;
+right:400px;
+float:right;
+}
+
+.whenClicked
+{transition: transform 3s;
+transform: rotateY(540deg);}
+
+/*--Aside--*/
+#aside
+{
+background-color:black;
+float:left;
+height:700px;
+width:300px;
+
+font-family:Courier, monospace;
+font-weight:500;
+line-height:50px;
+color:rgb(9,93,155);
+ }
+
+#aside p
+{font-size:120%;
+text-indent:50px;}
+
+#aside a
+{color:#33F;}
+
+/*--ArticelUsf--*/
+ #USF
+{
+background-color:grey;
+width:750px;
+position:relative;
+left:400px;
+top:100px;
+text-align:justify;
+}
+
+/*--ArticelSoviets--*/
+#Russia
+{
+background-color:grey;
+width:750px;
+position:relative;
+left:400px;
+top:100px;
+text-align:justify;
+}
+
+
